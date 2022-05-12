@@ -191,6 +191,109 @@ public class CalculatorTest {
 
         assertEquals(expectedResult, result);
     }
+
+
+    @Test
+    @DisplayName("Ensure 3 * 3 = 9")
+    public void ensureThreeMultipliedByThreeEqualsNine() {
+        //HACK: for demonstration purposes only
+        System.out.println("\t\tExecuting " + new Object() {
+        }.getClass().getEnclosingMethod().getName() + " Test");
+
+        int expectedResult = 9;
+
+        int result = new Calculator().multiply(3, 3);
+
+        assertEquals(expectedResult, result);
+    }
+
+
+    @Test
+    @DisplayName("Ensure 3 * (-3) = -9")
+    public void ensureThreeMultipliedByMinusThreeEqualsMinusNine() {
+        //HACK: for demonstration purposes only
+        System.out.println("\t\tExecuting " + new Object() {
+        }.getClass().getEnclosingMethod().getName() + " Test");
+
+        int expectedResult = -9;
+
+        int result = new Calculator().multiply(3, -3);
+
+        assertEquals(expectedResult, result);
+    }
+
+
+    @Test
+    @DisplayName("Ensure -3 * (-3) = 9")
+    public void ensureMinusThreeMultipliedByMinusThreeEqualsNine() {
+        //HACK: for demonstration purposes only
+        System.out.println("\t\tExecuting " + new Object() {
+        }.getClass().getEnclosingMethod().getName() + " Test");
+
+        int expectedResult = 9;
+
+        int result = new Calculator().multiply(-3, -3);
+
+        assertEquals(expectedResult, result);
+    }
+
+
+    @Test
+    @DisplayName("Ensure 3 * 0 = 0")
+    public void ensureThreeMultipliedByZeroEqualsZero() {
+        //HACK: for demonstration purposes only
+        System.out.println("\t\tExecuting " + new Object() {
+        }.getClass().getEnclosingMethod().getName() + " Test");
+
+        int expectedResult = 0;
+
+        int result = new Calculator().multiply(3, 0);
+
+        assertEquals(expectedResult, result);
+    }
+
+
+    @Test
+    @DisplayName("Ensure 5! = 120")
+    public void ensureFiveFactorialEqualsOneHundredAndTwenty() {
+        //HACK: for demonstration purposes only
+        System.out.println("\t\tExecuting " + new Object() {
+        }.getClass().getEnclosingMethod().getName() + " Test");
+
+        int expectedResult = 120;
+
+        int result = new Calculator().factorial(5);
+
+        assertEquals(expectedResult, result);
+    }
+
+
+    @Test
+    @DisplayName("Ensure 0! = 1")
+    public void ensureZeroFactorialEqualsOne() {
+        //HACK: for demonstration purposes only
+        System.out.println("\t\tExecuting " + new Object() {
+        }.getClass().getEnclosingMethod().getName() + " Test");
+
+        int expectedResult = 1;
+
+        int result = new Calculator().factorial(0);
+
+        assertEquals(expectedResult, result);
+    }
+
+
+    @Test
+    @DisplayName("Ensure -2! throws an Exception")
+    public void ensureMinusTwoFactorialThrowsException() {
+        //HACK: for demonstration purposes only
+        System.out.println("\t\tExecuting " + new Object() {
+        }.getClass().getEnclosingMethod().getName() + " Test");
+
+        Assertions.assertThrows(UnsupportedOperationException.class, () -> {
+            new Calculator().factorial(-2);
+        });
+    }
 }
 
 

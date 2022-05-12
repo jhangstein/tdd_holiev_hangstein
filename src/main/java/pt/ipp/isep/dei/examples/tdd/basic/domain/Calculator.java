@@ -29,10 +29,25 @@ public class Calculator {
     }
 
     public int multiply(int firstOperand, int secondOperand) {
-        throw new UnsupportedOperationException();
+        return firstOperand * secondOperand;
     }
 
     public int factorial(int firstOperand) {
-        throw new UnsupportedOperationException();
+        if(firstOperand == 0){
+            return 1;
+        }
+
+        if (firstOperand < 0){
+            throw new UnsupportedOperationException("Operand must be either positive or 0");
+        }
+
+        int result = 1;
+
+        while (firstOperand > 1){
+            result = result * firstOperand;
+            firstOperand--;
+        }
+
+        return result;
     }
 }

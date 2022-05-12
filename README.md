@@ -53,3 +53,44 @@
 - firstOperand = 5
 - secondOperand = -1
 - expected result = -5
+
+
+## Multiplication
+##### Positive Multiplication
+- firstOperand = 3
+- second Operand = 3
+- expected result = 9
+
+
+##### Negative Multiplication
+- firstOperand = 3
+- second Operand = -3
+- expected result = -9
+
+
+##### Double Negative Multiplication
+- firstOperand = -3
+- second Operand = -3
+- expected result = 9
+
+
+#####  Multiplication by Zero
+- firstOperand = 3
+- second Operand = 0
+- expected result = 0
+
+
+## Factorial
+##### Positive Factorial
+- firstOperand = 5
+- expected result = 120
+
+
+##### Negative Factorial
+- firstOperand = -2
+- expected result = UnsupportedOperationException
+
+
+#####  Zero Factorial
+- firstOperand = 0
+- expected result = 1
