@@ -23,8 +23,7 @@ public class Calculator {
 
     public int divide(int dividend, int divisor) {
         if (divisor == 0){
-            System.out.println("Can't divide by zero.");
-            throw new UnsupportedOperationException();
+            throw new UnsupportedOperationException("Can't divide by zero.");
         }
         return dividend/divisor;
     }
