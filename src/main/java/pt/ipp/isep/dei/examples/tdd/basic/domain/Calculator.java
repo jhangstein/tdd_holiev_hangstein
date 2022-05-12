@@ -18,11 +18,15 @@ public class Calculator {
     }
 
     public int subtract(int firstOperand, int secondOperand) {
-        throw new UnsupportedOperationException();
+        return firstOperand - secondOperand;
     }
 
     public int divide(int dividend, int divisor) {
-        throw new UnsupportedOperationException();
+        if (divisor == 0){
+            System.out.println("Can't divide by zero.");
+            throw new UnsupportedOperationException();
+        }
+        return dividend/divisor;
     }
 
     public int multiply(int firstOperand, int secondOperand) {
